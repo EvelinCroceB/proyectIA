@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca Pública</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #000;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 300px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+
+    .card p {
+      margin: 0 0 20px;
+      color: #666;
+    }
+
+    .card button {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .card button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Biblioteca Pública</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Catálogo</a>
+      <a href="#">Mi Perfil</a>
+      <a href="#">Administración</a>
+    </nav>
+  </header>
+  <div class="container">
+    <h2>Biblioteca Pública</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Catálogo de Libros</h3>
+        <p>Ver libros disponibles y prestados</p>
+        <button>Ver Catálogo</button>
+      </div>
+      <div class="card">
+        <h3>Mi Perfil</h3>
+        <p>Accede a tu información personal</p>
+        <button>Ver Perfil</button>
+      </div>
+      <div class="card">
+        <h3>Panel de Administración</h3>
+        <p>Para bibliotecarios</p>
+        <button>Acceder</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

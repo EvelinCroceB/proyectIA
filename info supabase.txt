@@ -1,0 +1,23 @@
+URL proyecto:
+https://hsbpshqarozzmbyljahk.supabase.co
+
+Clave API
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhzYnBzaHFhcm96em1ieWxqYWhrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzI2OTI5MDIsImV4cCI6MjA0ODI2ODkwMn0.e8oEvMXnVKHs6dh_s-DaM25EW5obVlsm_JRiRGQZH3k
+
+JAVASCRIP
+
+import { createClient } from '@supabase/supabase-js'
+
+const supabaseUrl = 'https://hsbpshqarozzmbyljahk.supabase.co'
+const supabaseKey = process.env.SUPABASE_KEY
+const supabase = createClient(supabaseUrl, supabaseKey)
+
+DARDO
+
+const supabaseUrl = 'https://hsbpshqarozzmbyljahk.supabase.co';
+const supabaseKey = String.fromEnvironment('SUPABASE_KEY');
+
+Future<void> main() async {
+  await Supabase.initialize(url: supabaseUrl, anonKey: supabaseKey);
+  runApp(MyApp());
+}
